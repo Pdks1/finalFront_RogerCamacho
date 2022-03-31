@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&display=swap');
+
+:root{
+    --main-color: #F3603B;
+    --secondary-color: #232C50;
+    --footer-color: #1E1E26;
+    --white: #fff;
+    --main-color-hover: #c94422;
+    --options-color: #B3B2B7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+/* ----------------------------------HEADER---------------------------------------- */
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+}
+
+.imgLog{
+    cursor: pointer;
+}
+
+
+.navBar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navBar li{
+    list-style: none;
+    padding: .5em;
+    transition: all .3s;
+}
+.navBar li:hover{
+    transform: scale(1.1);
+}
+
+.navBar li a{
+    text-decoration: none;
+    font-size: .8em;
+    color: var(--secondary-color);
+    transition: all .3s;
+}
+.navBar li a:hover{
+    color: var(--main-color-hover);
+}
+
+.btnNavBar{
+    background-color: var(--main-color);
+    color: var(--white);
+    width: 8em;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    transition: all .3s;
+}
+.btnNavBar:hover{
+    background-color: var(--main-color-hover);
+}
+.btnNavBar:active {
+    transform: scale(0.98);
+}
+
+.menu{
+    display: none;
+}
+
+/* -----------------------------------MAIN--------------------------------------- */
+main{
+    margin-left: 8em;
+    margin-right: 5em;
+}
+
+.sectionOne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxOne{
+    width: 50%;
+}
+
+.boxOne h1{
+    width: 65%;
+    color: var(--secondary-color);
+    font-size: 2.8em;
+    margin-bottom: .3em;
+}
+
+.boxOne p{
+    width: 50%;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.boxTwo{
+    width: 50%;
+}
+
+.boxTwo img{
+    width: 100%;
+}
+
+.btnMain{
+    background-color: var(--main-color);
+    color: var(--white);
+    width: 8em;
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    transition: all .3s;
+}
+.btnMain:hover{
+    background-color: var(--main-color-hover);
+}
+.btnMain:active {
+    transform: scale(0.98);
+}
+
+.sectionTwo{
+    display: flex;
+    margin-top: 5em;
+}
+
+.boxOneSectionTwo h2{
+    font-size: 2em;
+    color: var(--secondary-color);
+    margin-bottom: 1em;
+}
+
+.boxOneSectionTwo p{
+    width: 70%;
+}
+
+.boxTwoSectionTwo{
+    display: flex;
+    flex-direction: column;
+}
+
+.options{
+    margin-top: 1.5em;
+}
+
+.options .numberOption{
+    display: flex;
+    align-items: center;
+}
+
+.options .numberOption img{
+    width: 9%;
+    margin-right: 2em;
+}
+
+.options p{
+    margin-left: 6em;
+    color: var(--options-color);
+    max-width: 80%;
+}
+
+.sectionThree{
+    text-align: center;
+    margin-top: 6em;
+}
+
+.titleSectionThree{
+    color: var(--secondary-color);
+    margin-bottom: 1.5em;
+    font-size: 2em;
+}
+
+.testimonials{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cardTestimonial{
+    width: 30%;
+}
+
+.cardTestimonial img{
+    width: 22%;
+}
+
+.cardTestimonial h4{
+    margin-top: .9em;
+    margin-bottom: 1.2em;
+}
+
+.cardTestimonial p{
+    font-size: .9em;
+    color: var(--options-color);
+    margin-bottom: 2.5em;
+}
+
+/* -------------------------------FOOTER------------------------------------------- */
+.sectionOneFooter{
+    width: 100%;
+    background-color: var(--main-color);
+    margin-top: 8em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3em;
+}
+
+.sectionOneFooter h2{
+    width: 35%;
+    font-size: 2em;
+    color: var(--white);
+}
+
+.btnFooter{
+    background-color: var(--white);
+    color: var(--main-color);
+    width: 10em;
+    height: 3em;
+    padding: 1px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    transition: all .3s;
+}
+.btnFooter:hover{
+    background-color: #e0e0e0;
+}
+.btnFooter:active {
+    transform: scale(0.98);
+}
+
+.sectionTwoFooter{
+    background-color: var(--footer-color);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5em;
+}
+
+.socialMediaFooter div{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.socialMediaFooter div img{
+    margin: .3em;
+    cursor: pointer;
+}
+
+.footerOption{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerOption ul{
+    margin-left: 5em;
+    margin-right: 5em;
+    list-style: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.footerOption ul li{
+    margin: .5em;
+}
+
+.formFooter{
+    display: flex;
+}
+
+.formFooter input{
+    height: 3em;
+    width: 15em;
+    margin-right: 1em;
+    border: none;
+    border-radius: 50px;
+    padding-left: 1em;
+    outline: none;
+}
+
+.formFooter button{
+    background-color: var(--main-color);
+    height: 3em;
+    width: 4em;
+    border: none;
+    color: var(--white);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.formFooter button:hover{
+    background-color: var(--main-color-hover);
+}
+.formFooter button:active {
+    transform: scale(0.98);
+}
+
+.endFooter{
+    background-color: var(--footer-color);
+    color: var(--white);
+    text-align: center;
+    padding-bottom: .8em;
+}
+/* -------------------------------SLIDER------------------------------------------- */
+.slide {
+    position: relative;
+    margin-top: 26px;
+    display: none;
+}
+
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: calc( 220px + 3em);
+}
+
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+    text-align: center;
+    width: 100%;
+    margin-left: 3em;
+}
+
+.slide-control {
+    background: rgba(241, 102, 9, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.slide-control.prev {
+    left: 2%;
+}
+
+.slide-control.next {
+    right: 2%;
+}
+
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+    display: block;
+}
+
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+
+#slide-1:checked ~ .control-1 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo {
+    color: var(--main-color);
+}
+
+
+
+
+@media (max-width: 480px){
+    /* -------------------------------------------------------------------------- */
+    .navBar{
+        display: none;
+    }
+
+    .btnNavBar{
+        display: none;
+    }
+
+    .header{
+        justify-content: space-between;
+    }
+
+    .menu{
+        display: inline;
+        color: var(--secondary-color);
+        font-size: 1.7em;
+        margin-left: 7em;
+        cursor: pointer;
+    }
+
+    /* -------------------------------------------------------------------------- */
+    main{
+        margin-left: 1.2em;
+        margin-right: 1.2em;
+    }
+    
+    .sectionOne{
+        flex-direction: column-reverse;
+    }
+  
+    .boxOne{
+        width: 95%;
+        text-align: center;
+    }
+
+    .boxOne h1{
+        width: 100%;
+        font-size: 2.4em;
+        margin: 0;
+    }
+
+    .boxOne p{
+        width: 90%;
+        font-size: 1.1em;
+        margin: 0;
+    }
+
+    .boxTwo{
+        width: 100%;
+    }
+
+    .boxTwo img{
+        width: 95%;
+    }
+
+    .btnMain{
+        margin-top: 1em;
+    }
+
+    .sectionTwo{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .boxOneSectionTwo p{
+        color: var(--options-color);
+        width: 100%;
+    }
+  
+    .options{
+        margin-top: 1.5em;
+    }
+
+    .options .numberOption{
+        display: flex;
+        align-items: center;
+    }
+
+    .options .numberOption img{
+        margin-right: .8em;
+    }
+
+    .options p{
+        color: var(--options-color);
+        max-width: 95%;
+        text-align: start;
+        margin-left: 0;
+        margin-top: .5em;
+    }
+
+    .testimonials{
+        display: none;
+    }
+
+    .slide{
+        display: flex;
+        justify-content: center;
+    }
+
+    .cardTestimonial{
+        width: 80%;
+        
+    }
+    
+    .cardTestimonial img{
+        width: 20%;
+    }
+    
+    .cardTestimonial h4{
+        margin-top: .9em;
+        margin-bottom: 1.2em;
+    }
+    
+    .cardTestimonial p{
+        font-size: .9em;
+        color: var(--options-color);
+        margin-bottom: 0em;
+        width: 80%;
+        margin-left: 2em;
+    }
+
+    /* -------------------------------------------------------------------------- */
+    .sectionOneFooter{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sectionOneFooter h2{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    
+    .sectionTwoFooter{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .socialMediaFooter div{
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
+
+    .footerOption{
+        justify-content: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .footerOption ul{
+        margin-left: 0;
+        margin-right: 0;
+        padding: 2em;
+    }
+
+}
+
+@media (max-width: 768px){
+    .navBar li a{
+        font-size: .6em;
+    }
+    .btnNavBar{
+        width: 6em;
+        font-size: .6em;
+    }
+    .boxOne{
+        width: 75%;
+    }
+    .boxTwo{
+        width: 35%;
+    }
+    .sectionTwo{
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonials{
+        flex-direction: column;
+    }
+    .testimonials .cardTestimonial{
+        width: 100%;
+    }
+}
+
+@media (max-width: 950px){
+    .sectionTwoFooter{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
